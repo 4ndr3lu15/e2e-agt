@@ -19,4 +19,4 @@ HOST_VOLUME_PATH="volume"
 CONTAINER_VOLUME_PATH="/ws/volume"
 
 # Run the Docker container with GPU support and volume mapping
-docker run -it --gpus all --name $CONTAINER_NAME -p 8888:8888 -v $HOST_VOLUME_PATH:$CONTAINER
+docker run -it --gpus all --name $CONTAINER_NAME -p 8888:8888 -v $HOST_VOLUME_PATH:$CONTAINER_VOLUME_PATH $IMAGE_NAME

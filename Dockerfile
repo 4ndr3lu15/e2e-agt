@@ -2,8 +2,8 @@ FROM python:3.11
 
 WORKDIR /ws
 
-COPY ./requirements.txt /ws/requirements.txt
+COPY . /ws
 
 RUN pip install --no-cache-dir --upgrade -r /ws/requirements.txt
 
-COPY ./*.py /ws/
+CMD ["bash"]

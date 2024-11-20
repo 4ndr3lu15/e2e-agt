@@ -13,3 +13,4 @@ if [ $? -eq 0 ]; then
 else
     echo "Docker build failed"
     exit 1
+fi

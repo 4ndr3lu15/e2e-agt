@@ -22,4 +22,4 @@ torchsummary==1.5.1
 tqdm==4.65.0
 sed_eval
 stickytape
-git+git://github.com/lehduong/torch-warmup-lr.git
+git+https://github.com/lehduong/torch-warmup-lr.git
