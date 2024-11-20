@@ -8,7 +8,8 @@ from omegaconf import DictConfig
 import logging
 logger = logging.getLogger(__name__)
 
-from core import CETrainer, CTCTrainer
+from core.ce_trainer import CETrainer
+from core.ctc_trainer import CTCTrainer
 
 
 @hydra.main(version_base=None, config_path="configs", config_name="cnn_ctc")
