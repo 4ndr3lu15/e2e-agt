@@ -23,3 +23,7 @@ tqdm==4.65.0
 sed_eval
 stickytape
 git+https://github.com/lehduong/torch-warmup-lr.git
+audiomentations==0.37.0
+pedalboard==0.9.16
+nnAudio==0.3.3
+jiwer==3.0.5
