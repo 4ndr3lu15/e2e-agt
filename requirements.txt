@@ -2,7 +2,7 @@ hydra_colorlog==1.2.0
 hydra-core==1.3.2
 jams>=0.3.4
 jupyterlab
-librosa==0.10.0
+librosa==0.10.1
 matplotlib
 mido>=1.2.10
 mir_eval>=0.7
@@ -24,6 +24,6 @@ sed_eval
 stickytape
 git+https://github.com/lehduong/torch-warmup-lr.git
 audiomentations==0.37.0
-pedalboard==0.9.16
+pedalboard==0.9.14
 nnAudio==0.3.3
 jiwer==3.0.5

@@ -17,8 +17,10 @@ from utils.preprocess import *
 import logging
 logger = logging.getLogger(__name__)
 
-GUITARSET_PATH = os.path.join(DATA_PATH, "raw", "GuitarSet")
-AUDIO_PATH = os.path.join(GUITARSET_PATH, "audio", "audio_mic")
+# GUITARSET_PATH = os.path.join(DATA_PATH, "raw", "GuitarSet")
+GUITARSET_PATH = '/ws/e2e-agt/data/guitarset'
+# AUDIO_PATH = os.path.join(GUITARSET_PATH, "audio", "audio_mic")
+AUDIO_PATH = '/ws/e2e-agt/data/guitarset/audio_mono-mic'
 ANNOTATION_PATH = os.path.join(GUITARSET_PATH, "annotation")
 PLAYERS_IDS = ["00", "01", "02", "03", "04", "05"]
 TRAIN_PLAYERS_IDS = ["02", "03", "04", "05"]
@@ -279,7 +281,7 @@ def process(anno_name, cfg, skip_features=False):
     return player_id, data
 
 
-@hydra.main(version_base=None, config_path="../configs", config_name="audio_config")
+@hydra.main(version_base=None, config_path="../configs", config_name="etc")
 def main(cfg: DictConfig) -> None:
     random.seed(cfg.random_seed)
     np.random.seed(cfg.random_seed)

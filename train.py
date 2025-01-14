@@ -13,7 +13,7 @@ from core.ctc_trainer import CTCTrainer
 
 
 @hydra.main(version_base=None, config_path="configs", config_name="cnn_ctc")
-def main(cfg: DictConfig) -> None:
+def main(cfg):
     run_dir = HydraConfig.get().run.dir
 
     if cfg.trainer == "CTCTrainer":
